@@ -1,10 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
 
 import React from 'react';
 import {
@@ -14,17 +7,13 @@ import {
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import AntDesign from 'react-native-vector-icons/AntDesign'
+import NavigatorConatiner from './src/navigation/NavigatorContainer';
 
 
 
 const App = () => {
   return (
-      <LinearGradient colors={['#4c669f', '#3b5998', '#192f6a']} style={styles.linearGradient}>
-      <Text style={styles.buttonText}>
-        Sign in with Facebook1
-      </Text>
-      <AntDesign name="phone"  color="red"/>
-    </LinearGradient>
+     <NavigatorConatiner />
   )
 }
 
