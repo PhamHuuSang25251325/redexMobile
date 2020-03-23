@@ -1,11 +1,14 @@
 import React from 'react';
-import { View,Text } from 'react-native';
+import { View, Text, SafeAreaView } from 'react-native';
+import CustomHeader from '../../shared/CustomHeader';
+import LinearGradient from 'react-native-linear-gradient'
 
-const HomeScreen = (props)=>{
+
+const HomeScreen = ({ navigation }) => {
     return (
-        <View style={{backgroundColor : '#88B04B' ,height : '100%'}}>
-            <Text>HomeScreen</Text>
-        </View>
+        <LinearGradient style={{ flex: 1 }} colors={['#D3CCE3', '#E9E4F0']}>
+            <CustomHeader title="Home" navigation={navigation} isHome={true} />
+        </LinearGradient>
     )
 }
 
